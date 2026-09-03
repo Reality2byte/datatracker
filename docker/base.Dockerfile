@@ -26,7 +26,7 @@ RUN cmake \
     && make -j"$(nproc)" \
     && make install
 
-FROM python:3.12-trixie
+FROM python:3.14-trixie
 LABEL maintainer="IETF Tools Team <tools-discuss@ietf.org>"
 
 ENV DEBIAN_FRONTEND=noninteractive
